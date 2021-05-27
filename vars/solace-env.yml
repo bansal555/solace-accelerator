@@ -129,7 +129,7 @@ bridges:
   remoteDeliverToOnePriority: "p1"
   tlsCipherSuiteList: "default"
   
-  action: POST
+  action: DELETE
   
 #remoteMsgVPN
 remoteMsgVPN:
@@ -163,4 +163,4 @@ dmr_bridges:
 - remoteMsgVpnName: ""
   remoteNodeName: "solace-accelerators" 
     
-  action: POST 
+  action: DELETE
