@@ -94,7 +94,7 @@ queues:
   permission: "consume"
   maxMsgSpoolUsage: 100
   
-  action: POST
+  action: DELETE
 
 - queueName: solace-accelerators3
   accessType: "exclusive"
