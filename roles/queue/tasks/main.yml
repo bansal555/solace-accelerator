@@ -48,12 +48,7 @@
 - name: Error in Queue update ?
   debug:
    var: result.json.meta.error.status
-  when: (result.json.meta.responseCode is undefined or result.json.meta.responseCode != 200) and q.action == 'PATCH'
-
-- name: Prompt to confirm the deletion of "{{ q.queueName }}" queue
-  pause:
-     prompt: "Do you really want to delete queue??\n\nPress ENTER to delete queue or CTRL+C and A to abort..." 
-  when: q.action == 'DELETE'    
+  when: (result.json.meta.responseCode is undefined or result.json.meta.responseCode != 200) and q.action == 'PATCH' 
   
 - name: Delete Queue "{{ q.queueName }}"
   uri:
