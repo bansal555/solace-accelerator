@@ -94,10 +94,20 @@ queues:
   permission: "consume"
   maxMsgSpoolUsage: 100
   
-  action: DELETE
+  action: POST
 
 - queueName: solace-accelerators3
   accessType: "exclusive"
+  owner: "foo"
+  ingressEnabled: true
+  egressEnabled: false 
+  permission: "consume"
+  maxMsgSpoolUsage: 100
+  
+  action: POST
+  
+- queueName: solace-accelerators4
+  accessType: "non-exclusive"
   owner: "foo"
   ingressEnabled: true
   egressEnabled: false 
