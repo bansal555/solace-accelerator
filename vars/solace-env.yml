@@ -96,7 +96,7 @@ queues:
   
   action: POST
 
-- queueName: solace-accelerators2
+- queueName: Pharma.CMG.FMI.Customer.RDP
   accessType: "exclusive"
   owner: "foo"
   ingressEnabled: true
