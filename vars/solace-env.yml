@@ -95,14 +95,24 @@ rdp_restConsumers:
   
   action: POST  
   
+- queueName: solace-accelerator1
+  accessType: "exclusive"
+  owner: "foo"
+  ingressEnabled: true
+  egressEnabled: false 
+  permission: "consume"
+  maxMsgSpoolUsage: 100
+  
+  action: POST 
+  
 #queue_subscriptions
 queue_subscriptions:
-- queueName: " Pharma.CMG.FMI.Customer.RDP"
+- queueName: "Pharma.CMG.FMI.Customer.RDP"
   subscriptionTopic: "Pharma/Data/FHIR-V4.0.1/Common/General/Bundle/Hub/RSVD/Copay"
   
   action: POST
   
-- queueName: "solace-accelerators2"
+- queueName: "solace-accelerators1"
   subscriptionTopic: "Roche/Data/PIIM-V1/Commercial/General/Account/HealthCareProfessional/Reltio/RelationshipsActivity"
   
   action: POST
