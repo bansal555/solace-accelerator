@@ -84,7 +84,7 @@ rdp_restConsumers:
   
   action: POST
   
-#queues
+#queue
 queues:
 - queueName: Pharma.Contract.Status.Retry
   accessType: "exclusive"
