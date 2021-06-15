@@ -121,9 +121,9 @@ queue_subscriptions:
 - queueName: "solace-accelerators2"
   subscriptionTopic: "Pharma/Data/FHIR-V4.0.1/Common/General/Bundle/Hub/RSVD/Copay/Created/v1/P2C-P/APP-7294"
   
-  action: PATCH
+  action: POST
   
-- queueName: "solace-accelerators2"
+- queueName: "solace-accelerators3"
   subscriptionTopic: "solace-accelerators-topic"
   
   action: POST
