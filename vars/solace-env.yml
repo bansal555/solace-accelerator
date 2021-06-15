@@ -124,7 +124,7 @@ queue_subscriptions:
   action: POST
   
 - queueName: "solace-accelerators3"
-  subscriptionTopic: "solace-accelerators-topic"
+  subscriptionTopic: "Roche/Data/PIIM-V1/Commercial/General/Account/HealthCareProfessional/Reltio/RelationshipsActivity/Published/v1/M2C-P/PRF-"
   
   action: POST
   
