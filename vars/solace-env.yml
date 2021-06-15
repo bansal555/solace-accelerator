@@ -86,7 +86,7 @@ rdp_restConsumers:
   
 #queues
 queues:
-- queueName: solace-accelerators2
+- queueName: solace-accelerators1
   accessType: "non-exclusive"
   owner: "foo"
   ingressEnabled: true
@@ -96,7 +96,7 @@ queues:
   
   action: POST
 
-- queueName: solace-accelerators3
+- queueName: solace-accelerators2
   accessType: "exclusive"
   owner: "foo"
   ingressEnabled: true
@@ -106,25 +106,16 @@ queues:
   
   action: POST
   
-- queueName: solace-accelerators4
-  accessType: "non-exclusive"
-  owner: "foo"
-  ingressEnabled: true
-  egressEnabled: false 
-  permission: "consume"
-  maxMsgSpoolUsage: 100
-  
-  action: POST
   
 #queue_subscriptions
 queue_subscriptions:
-- queueName: "solace-accelerators2"
-  subscriptionTopic: "Pharma/Data/FHIR-V4.0.1/Common/General/Bundle/Hub/RSVD/Copay/Created/v1/P2C-P/APP-7294"
+- queueName: "solace-accelerators1"
+  subscriptionTopic: "Pharma/Data/FHIR-V4.0.1/Common/General/Bundle/Hub/RSVD/Copay"
   
   action: POST
   
-- queueName: "solace-accelerators3"
-  subscriptionTopic: "Roche/Data/PIIM-V1/Commercial/General/Account/HealthCareProfessional/Reltio/RelationshipsActivity/Published/v1/M2C-P/PRF-"
+- queueName: "solace-accelerators2"
+  subscriptionTopic: "Roche/Data/PIIM-V1/Commercial/General/Account/HealthCareProfessional/Reltio/RelationshipsActivity"
   
   action: POST
   
