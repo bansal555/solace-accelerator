@@ -85,7 +85,7 @@ rdp_restConsumers:
   action: POST
   
 #queues
-- queueName: Pharma.CMG.FMI.Customer.RDP
+- queueName: Pharma.Contract.Status.Retry
   accessType: "exclusive"
   owner: "foo"
   ingressEnabled: true
@@ -95,7 +95,7 @@ rdp_restConsumers:
   
   action: POST  
   
-- queueName: solace-accelerator1
+- queueName: Dia.Contract.Status.Retry
   accessType: "exclusive"
   owner: "foo"
   ingressEnabled: true
@@ -107,13 +107,13 @@ rdp_restConsumers:
   
 #queue_subscriptions
 queue_subscriptions:
-- queueName: "Pharma.CMG.FMI.Customer.RDP"
-  subscriptionTopic: "Pharma/Data/FHIR-V4.0.1/Common/General/Bundle/Hub/RSVD/Copay"
+- queueName: "Pharma.Contract.Status.Retry"
+  subscriptionTopic: "Pharma/Data/App/Common/General"
   
   action: POST
   
-- queueName: "solace-accelerators1"
-  subscriptionTopic: "Roche/Data/PIIM-V1/Commercial/General/Account/HealthCareProfessional/Reltio/RelationshipsActivity"
+- queueName: "Dia.Contract.Status.Retry"
+  subscriptionTopic: "Dia/Data/App/Common/General"
   
   action: POST
   
