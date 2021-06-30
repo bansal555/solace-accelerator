@@ -97,7 +97,7 @@ queues:
   action: POST  
   
 - queueName: Dia.Contract.Status.Retry
-  accessType: "exclusive"
+  accessType: "non-exclusive"
   owner: "foo"
   ingressEnabled: true
   egressEnabled: false 
